@@ -1,4 +1,4 @@
-package Algorithm;
+package model.algorithm;
 
 
 public interface Action {

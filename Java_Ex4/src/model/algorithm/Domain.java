@@ -1,6 +1,6 @@
 /*Maria Kuskina 313926677 */
 
-package Algorithm;
+package model.algorithm;
 
 import java.util.ArrayList;
 

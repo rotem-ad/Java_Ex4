@@ -1,4 +1,4 @@
-package Algorithm;
+package model.algorithm;
 
 import java.util.HashMap;
 import java.util.PriorityQueue;

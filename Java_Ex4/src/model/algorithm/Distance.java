@@ -1,6 +1,6 @@
 /*Author: Maria Kuskina 313926677*/
 
-package Algorithm;
+package model.algorithm;
 
 public interface Distance {
 	

@@ -1,6 +1,6 @@
 
 
-package Algorithm;
+package model.algorithm;
 import java.io.Serializable;
 
 
