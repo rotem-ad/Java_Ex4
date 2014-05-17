@@ -14,11 +14,12 @@ public class ConnectionHandler implements ClientHandler{
 				System.out.println(line);
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Connection disconnected unexpectedly");
+			//e.printStackTrace();
 		}
 		catch (Exception e) {
 			// When inFromClient is NULL
-			System.out.println("Handler finished");
+			System.out.println("ConnectionHandler finished");
 		}
 		
 	}
