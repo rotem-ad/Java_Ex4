@@ -14,7 +14,12 @@ import config.ServerConf;
 
 public class RunServer {
 
+	// Constants
+	private static final String SERVER_CONF_PATH = "resources/ConfigFiles/serverConf.xml";
+	
+	
 	public static void main(String[] args) {
+		
 		
 		/*XStream xs = new XStream();
 		ServerConf srvConf = new ServerConf(5000, 8, new ConnectionHandler());
@@ -47,7 +52,7 @@ public class RunServer {
 		
 		BufferedReader xmlInput = null;
 		try {
-			xmlInput = new BufferedReader(new FileReader("resources/ConfigFiles/serverConf.xml"));
+			xmlInput = new BufferedReader(new FileReader(SERVER_CONF_PATH));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -66,6 +71,7 @@ public class RunServer {
 		int port = srvConfig.getPort();
 		int poolSize = srvConfig.getPoolSize();
 		
+		// Initialize server instance
 		Server srv = new Server(port,poolSize,handler);
 	
 		new Thread(srv).start();

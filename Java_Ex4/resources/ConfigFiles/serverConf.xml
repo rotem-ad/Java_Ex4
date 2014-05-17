@@ -1,5 +1,5 @@
 <config.ServerConf>
-  <port>5000</port>
-  <poolSize>8</poolSize>
+  <port>5550</port>
+  <poolSize>5</poolSize>
   <handler class="model.ConnectionHandler"/>
 </config.ServerConf>
