@@ -1,10 +1,10 @@
 package model;
 
-import java.io.BufferedReader;
-import java.io.PrintWriter;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 public interface ClientHandler {
 	
-	public void handleClient(BufferedReader inFromClinet, PrintWriter out2Client);
+	public void handleClient(ObjectInputStream inFromClient, ObjectOutputStream out2Client);
 
 }
