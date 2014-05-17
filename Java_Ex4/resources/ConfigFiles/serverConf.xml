@@ -1,0 +1,5 @@
+<config.ServerConf>
+  <port>5000</port>
+  <poolSize>8</poolSize>
+  <handler class="model.ConnectionHandler"/>
+</config.ServerConf>
