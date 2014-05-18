@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public interface Solver {
 
 	//get all actions to get from start state to goal state 
-	public ArrayList<State> Solve(State start, State goal);
+	public ArrayList<Action> Solve(State start, State goal);
 	
 	public int getNumOfEvaluetedNodes();
 	

@@ -102,7 +102,7 @@ public class Minimax extends AbsSolver {
    
 
 	@Override
-	public ArrayList<State> Solve(State start, State goal) {
+	public ArrayList<Action> Solve(State start, State goal) {
 		// TODO Auto-generated method stub
 		return null;
 	}
