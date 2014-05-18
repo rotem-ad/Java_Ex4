@@ -4,13 +4,14 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.ObjectOutputStream;
 import java.net.InetAddress;
+import java.net.InetSocketAddress;
 import java.net.Socket;
 
 public class RunClient {
 
 	public static void main(String[] srgs) throws Exception 
 	{
-		Socket  myServer = new Socket(InetAddress.getLocalHost(), 5550);
+		Socket  myServer = new Socket(InetAddress.getByName("10.0.0.3"), 5550);
 		
 		//ObjectInputStream inFromServer = new ObjectInputStream(myServer.getInputStream()); // This line caused a strange BUG!
 		ObjectOutputStream outToServer = new ObjectOutputStream(myServer.getOutputStream());
