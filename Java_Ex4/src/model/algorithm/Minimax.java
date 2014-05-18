@@ -3,7 +3,7 @@ package model.algorithm;
 import java.util.ArrayList;
 
 public class Minimax extends AbsSolver {
-	private Domain domain;
+	private Model domain;
 	
 	/**
      * variable <code>depthLimit</code> - the depth limit of
@@ -27,7 +27,7 @@ public class Minimax extends AbsSolver {
      *
      * @param depthLimit an <code>int</code> value - the depth of
      * the minimax search tree*/
-    public Minimax(int depthLimit, Domain domain) {
+    public Minimax(int depthLimit, Model domain) {
     	this.depthLimit = depthLimit;
     	this.domain = domain;
     }
@@ -62,16 +62,16 @@ public class Minimax extends AbsSolver {
 		raiseNumOfEvaluetedNodes();
 	
 		// Return utility if game over or depth limit reached
-		if (node.gameOver() || depthLeft == 0)
+		if ( domain.isGameOver(node) || depthLeft == 0)
 			return node.utility();
 		
 		
 		// Otherwise, generate children
-		ArrayList<Action> actions = domain.getActions(node); //node.expand();
+		ArrayList<Action> possibleActions = domain.getPossibleActions(node, node.getPlayer()); //node.expand();
 	
 		// Evaluate the depth-limited minimax value for each
 		// child, keeping track of the best
-		for (Action action : actions) {
+		for (Action action : possibleActions) {
 			State child = action.doAction(node);
 		    double childUtility = minimaxEval(child, depthLeft - 1);
 		    // update best utility and move if appropriate
@@ -102,7 +102,7 @@ public class Minimax extends AbsSolver {
    
 
 	@Override
-	public ArrayList<Action> Solve(State start, State goal) {
+	public ArrayList<State> Solve(State start, State goal) {
 		// TODO Auto-generated method stub
 		return null;
 	}
