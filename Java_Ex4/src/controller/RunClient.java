@@ -10,7 +10,7 @@ public class RunClient {
 
 	public static void main(String[] srgs) throws Exception 
 	{
-		Socket  myServer = new Socket(InetAddress.getLocalHost(), 5000);
+		Socket  myServer = new Socket(InetAddress.getLocalHost(), 5550);
 		
 		//ObjectInputStream inFromServer = new ObjectInputStream(myServer.getInputStream()); // This line caused a strange BUG!
 		ObjectOutputStream outToServer = new ObjectOutputStream(myServer.getOutputStream());
