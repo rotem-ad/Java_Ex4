@@ -7,7 +7,7 @@ import model.algorithm.Model;
 import model.algorithm.State;
 
 
-public class TicTacToe implements Model{
+public class ModelTtt implements Model{
 	
 	State cuurState;
 	
@@ -19,11 +19,11 @@ public class TicTacToe implements Model{
 	
 	
 	//constractor -- create new state
-	public TicTacToe() {
+	public ModelTtt() {
 		
 	}
 	
-	public TicTacToe(int boardSize) {
+	public ModelTtt(int boardSize) {
 		this.cuurState = new State(boardSize);
 	}
 	
@@ -45,7 +45,7 @@ public class TicTacToe implements Model{
 		    for( j=0; j<getBoardSize(); j++)
 		    	if (state.getBoard()[i][j] == EMPTY)
 		    	{
-		    		TttAction ac = new TttAction(i, j, player);
+		    		ActionTtt ac = new ActionTtt(i, j, player);
 		    		actions.add(ac);
 		    	} 
 		return actions;
@@ -91,6 +91,12 @@ public class TicTacToe implements Model{
 				if (cuurState.getBoard()[i][j] == EMPTY)
 					return false;
 		return true;
+		
+	}
+
+	@Override
+	public boolean isGameWon(State state) {
+		return isPlayerWon(state.getPlayer());
 		
 	}
 }

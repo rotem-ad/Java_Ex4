@@ -1,5 +1,8 @@
 package model.algorithm;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class State {
 	
 	private int[][] board;
@@ -38,8 +41,26 @@ public class State {
 		    {   100,     0,     0,     0 },
 		    {  1000,     0,     0,     0 }
 		};
-
-	public	int evaluatePosition()    {
+	 public int getNumberOfEmptyCells()
+	 {
+		 int count =0;
+		 for(int i=0; i< getBoardSize(); i++)
+			 for(int j=0; j< getBoardSize(); j++)
+				 if (board[i][j] == -1)
+					 count++;
+		 return count;
+	 }
+	 public List<Integer> getEmptyCellIds()
+	 {
+		 List<Integer> cellIds = new ArrayList<Integer>();
+		 
+		 for(int i=0; i< getBoardSize(); i++)
+			 for(int j=0; j< getBoardSize(); j++)
+				 if (board[i][j] == 0)
+					 cellIds.add(i*getBoardSize()+j);
+		 return cellIds;
+	 }
+	private	int evaluatePosition()    {
 		    int opponent = (player == MAX) ? MIN : MAX;
 		    int piece;
 		    int players, others, t = 0, i, j;

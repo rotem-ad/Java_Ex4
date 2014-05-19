@@ -3,7 +3,7 @@ package model.tictactoe;
 import model.algorithm.Action;
 import model.algorithm.State;
 
-public class TttAction implements Action{
+public class ActionTtt implements Action{
 
 	private int row;
 	private int col;
@@ -11,7 +11,7 @@ public class TttAction implements Action{
 	
 
 	
-	public TttAction(int row, int col, int action) {
+	public ActionTtt(int row, int col, int action) {
 		super();
 		this.row = row;
 		this.col = col;

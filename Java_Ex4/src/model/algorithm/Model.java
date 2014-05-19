@@ -20,7 +20,7 @@ public interface Model {
 	public void moveUpLeft();
 	public void moveDownRight();
 	public void moveDownLeft();*/
-	
+	public boolean isGameWon(State state);
 	public boolean isGameOver(State state); //is given state concludes the game
 	ArrayList<Action> getPossibleActions(State state, int player); //return possible actions resolving from given state
 	
