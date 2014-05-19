@@ -6,27 +6,35 @@ import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
+import java.util.Date;
+import java.util.List;
 import java.util.concurrent.Callable;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+
+import model.algorithm.Action;
+import model.algorithm.Solver;
+import model.algorithm.State;
 
 public class Server implements Runnable {
 	// Data Members
 	ServerSocket server;
 	private int port;
 	private int poolSize;
-	private ClientHandler<Integer> handler;
 	private boolean stop;
+	private Solver solver;
+	//private ClientHandler<Integer> handler;
 	
 	// Methods
 	
 	// Server constructor
-	public Server(int port, int poolSize, ClientHandler<Integer> handler) {
+	public Server(int port, int poolSize, Solver solver) {
 		this.port = port;
 		this.poolSize = poolSize;
-		this.handler = handler;
+		this.solver = solver;
 		this.stop = false;
 	}
 	
@@ -41,9 +49,27 @@ public class Server implements Runnable {
 			// Thread pool creation 
 			ExecutorService threadPool = Executors.newFixedThreadPool(poolSize);
 			
+			//create a list to hold the Future object associated with Callable
+	        List<Future<Action>> list = new CopyOnWriteArrayList<Future<Action>>();
+			
 			// Server main loop
 			while (!stop) {
 				try {
+					// Check if any task is done 
+					for(Future<Action> fut : list){
+			            try {
+			                //print the return value of Future, notice the output delay in console
+			                // because Future.get() waits for task to get completed
+			            	if (fut.isDone()) {
+			            		System.out.println(new Date()+ "::"+fut.get().getName()); // Prints each Action's name
+			            		list.remove(fut);
+			            	}
+			            } catch (InterruptedException | ExecutionException e) {
+			                e.printStackTrace();
+			            }
+			        }	
+					
+					
 				//System.out.println("Waiting for client");
 				final Socket client = server.accept();
 				System.out.println("Client connected");
@@ -54,35 +80,46 @@ public class Server implements Runnable {
 				final ObjectInputStream inFromClient = new ObjectInputStream(client.getInputStream());
 				final ObjectOutputStream out2Client = new ObjectOutputStream(client.getOutputStream());
 				
-				Future<Integer> retVal = threadPool.submit(new Callable<Integer>() {
+				
+				//final State start = (State) inFromClient.readObject();
+				
+				//TODO: maybe use FutureTask?
+				 Future<Action> task = threadPool.submit(new Callable<Action>() {
 
 					@Override
-					public Integer call() throws Exception {
-						// Handle the client's request
-						Integer val = (Integer) handler.handleClient(inFromClient, out2Client);
+					public Action call() throws Exception {
+						//return the thread name executing this callable task
+				        //return Thread.currentThread().getName();
+						
+						Action nextMove = null;
 						try {
-							inFromClient.close();
-							out2Client.close();
-							client.close();
+						while (!client.isClosed()) {
+						
+						State start = (State) inFromClient.readObject();
+						
+						// Handle the client's request - solve given state
+						nextMove = solver.Solve(start);
+						System.out.println("solving..");	
+						
+							out2Client.writeObject(nextMove);
+							out2Client.flush();
+							//inFromClient.close();
+							//out2Client.close();
+							//client.close();
+						}
 							
 						} catch (IOException e) {
-							e.printStackTrace();
+							//e.printStackTrace();
+							client.close();
 						}
-						return val;
-					}
-					
+						// TODO: return default Action?
+						return nextMove;
+						}		
 				});
-				
-				try {
-					System.out.println("Client returned: " + retVal.get());
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (ExecutionException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				
+				 
+				// Add task to list of Futures 
+				list.add(task);
+
 
 				} catch (SocketTimeoutException e) {
 					//System.out.println("Connection timed out");

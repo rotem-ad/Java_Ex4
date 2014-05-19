@@ -5,8 +5,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import model.ClientHandler;
 import model.Server;
+import model.algorithm.MiniMax;
+import model.algorithm.Solver;
+import model.game2048.Model2048;
 
 import com.thoughtworks.xstream.XStream;
 
@@ -66,12 +68,14 @@ public class RunServer {
 			e.printStackTrace();
 		}
 		
-		ClientHandler handler = srvConfig.getHandler();
+		//ClientHandler handler = srvConfig.getHandler();
+		Model2048 m2048 = new Model2048(4);
+		Solver solver = new MiniMax(m2048, 3);
 		int port = srvConfig.getPort();
 		int poolSize = srvConfig.getPoolSize();
 		
 		// Initialize server instance
-		Server srv = new Server(port,poolSize,handler);
+		Server srv = new Server(port,poolSize,solver);
 	
 		new Thread(srv).start();
 
