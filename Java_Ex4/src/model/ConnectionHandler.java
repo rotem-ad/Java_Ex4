@@ -4,15 +4,21 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class ConnectionHandler implements ClientHandler{
+public class ConnectionHandler implements ClientHandler<Integer>{
+	
+	// Data Members
+	private static Integer val = 0;
+	
+	// Constructor
 
 	@Override
-	public void handleClient(ObjectInputStream inFromClient, ObjectOutputStream out2Client) {
+	public Integer handleClient(ObjectInputStream inFromClient, ObjectOutputStream out2Client) {
 		String line;
 		try {
 			while (!(line=(String)inFromClient.readObject()).equals("exit")) {
 				System.out.println(line);
 			}
+			return val+1;
 		} catch (IOException e) {
 			System.out.println("Connection disconnected unexpectedly");
 			//e.printStackTrace();
@@ -21,7 +27,7 @@ public class ConnectionHandler implements ClientHandler{
 			// When inFromClient is NULL
 			System.out.println("ConnectionHandler finished");
 		}
-		
+		return -1;
 	}
 
 }

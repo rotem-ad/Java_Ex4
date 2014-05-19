@@ -6,21 +6,24 @@ import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class Server implements Runnable {
 	// Data Members
 	ServerSocket server;
 	private int port;
 	private int poolSize;
-	private ClientHandler handler;
+	private ClientHandler<Integer> handler;
 	private boolean stop;
 	
 	// Methods
 	
 	// Server constructor
-	public Server(int port, int poolSize, ClientHandler handler) {
+	public Server(int port, int poolSize, ClientHandler<Integer> handler) {
 		this.port = port;
 		this.poolSize = poolSize;
 		this.handler = handler;
@@ -51,12 +54,12 @@ public class Server implements Runnable {
 				final ObjectInputStream inFromClient = new ObjectInputStream(client.getInputStream());
 				final ObjectOutputStream out2Client = new ObjectOutputStream(client.getOutputStream());
 				
-				threadPool.execute(new Runnable() {
-					
+				Future<Integer> retVal = threadPool.submit(new Callable<Integer>() {
+
 					@Override
-					public void run() {
+					public Integer call() throws Exception {
 						// Handle the client's request
-						handler.handleClient(inFromClient, out2Client);
+						Integer val = (Integer) handler.handleClient(inFromClient, out2Client);
 						try {
 							inFromClient.close();
 							out2Client.close();
@@ -65,9 +68,21 @@ public class Server implements Runnable {
 						} catch (IOException e) {
 							e.printStackTrace();
 						}
-						
+						return val;
 					}
+					
 				});
+				
+				try {
+					System.out.println("Client returned: " + retVal.get());
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (ExecutionException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
 
 				} catch (SocketTimeoutException e) {
 					//System.out.println("Connection timed out");

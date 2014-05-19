@@ -3,8 +3,8 @@ package model;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public interface ClientHandler {
+public interface ClientHandler <T> {
 	
-	public void handleClient(ObjectInputStream inFromClient, ObjectOutputStream out2Client);
+	public T handleClient(ObjectInputStream inFromClient, ObjectOutputStream out2Client);
 
 }
