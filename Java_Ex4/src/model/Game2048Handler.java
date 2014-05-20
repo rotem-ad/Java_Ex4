@@ -13,40 +13,40 @@ import model.game2048.Model2048;
 public class Game2048Handler implements ClientHandler{
 	// Members
 	Solver solver;
-	int treeDepth;
 	
-	public Game2048Handler() {
-		//TODO: get values from outside
-		Model2048 m2048 = new Model2048(4);
-		this.treeDepth = 3;
-		solver = new MiniMax(m2048, this.treeDepth);
+	// Game2048Handler constructor
+	public Game2048Handler(Solver solver) {
+		this.solver = solver;
 	}
 
 	@Override
 	public void handleClient(ObjectInputStream inFromClient,ObjectOutputStream out2Client) {
 		Action nextMove = null;
 		try {
-		//TODO: change stop condition
-		while (nextMove != null) {
-				// Get state from client
-				State state = (State) inFromClient.readObject();
-
+		State state;
+		// TODO: change stop condition?
+		// Get state from client. If score is -1 then finish handle this client
+		while ((state = (State) inFromClient.readObject()).getScore() != -1) {
 				// Handle the client's request - solve given state
 				nextMove = solver.Solve(state);
-				System.out.println("solving..");
+				System.out.println(Thread.currentThread().getName() + ": solving..");
 				
 				// Send solution to client 
 				out2Client.writeObject(nextMove);
 				out2Client.flush();
-			}
+			} 
 		
 		System.out.println("Handler 2048 finished");
 		inFromClient.close();
 		out2Client.close();
 		//client.close();
 
-		} catch (ClassNotFoundException | IOException  e) {
+		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
+		}
+		catch (IOException e) {
+			System.out.println("Client disconnected unexpectedly");
+			return;
 		}
 	}
 

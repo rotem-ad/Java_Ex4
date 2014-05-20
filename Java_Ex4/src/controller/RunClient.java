@@ -13,9 +13,8 @@ public class RunClient {
 
 	public static void main(String[] srgs) throws Exception 
 	{
-		Socket  myServer = new Socket(InetAddress.getByName("10.160.5.85"), 5550);
+		Socket  myServer = new Socket(InetAddress.getByName("10.100.101.111"), 5550);
 		
-		//ObjectInputStream inFromServer = new ObjectInputStream(myServer.getInputStream()); // This line caused a strange BUG!
 		ObjectOutputStream outToServer = new ObjectOutputStream(myServer.getOutputStream());
 		ObjectInputStream inFromServer = new ObjectInputStream(myServer.getInputStream());				
 		
@@ -40,23 +39,15 @@ public class RunClient {
 			s = nextMove.doAction(s);
 		}
 		
-		Thread.sleep(5 * 1000);
-		
-		System.out.println("Client finished");
-	/*	BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
-		String line;
-		//read input
-		while(!(line=inFromUser.readLine()).equals("exit"))
-		{
-			outToServer.writeObject(line); // Send object to server output stream
-			outToServer.flush();
-		}
-		outToServer.writeObject(line);
+		// Send state with -1 score to end communication with server
+		s.setScore(-1);
+		outToServer.writeObject(s);
 		outToServer.flush();
 		
-		//close all stuff
-		inFromUser.close();
+		System.out.println("Client finished");
+		
+		//close resources
 		outToServer.close();
-		myServer.close();*/
+		myServer.close();
 	}
 }
