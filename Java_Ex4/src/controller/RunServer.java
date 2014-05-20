@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import model.ClientHandler;
 import model.Server;
@@ -76,17 +77,22 @@ public class RunServer {
 		// Initialize server instance
 		Server srv = new Server(port,poolSize,handler);
 	
-		new Thread(srv).start();
-
-		/*try {
-		    Thread.sleep(20 * 1000);
-		} catch (InterruptedException e) {
-		    e.printStackTrace();
-		}*/
+		new Thread(srv).start(); // Invoke server's run method in new thread 
 		
-		//TODO: find elegant way to stop server
-		//System.out.println("Stopping Server");
-		//srv.stopServer();
+		// Type "shutdown" command to stop server
+		BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
+		try {
+			String userCommand;
+			while ( !((userCommand = inFromUser.readLine()).equals("shutdown")) ) {
+					Thread.sleep(5000);
+			}
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("Stopping Server..");
+		srv.stopServer(); // Stop the server instance
+
 	}
 
 }
