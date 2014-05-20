@@ -5,13 +5,10 @@ import model.algorithm.State;
 
 public abstract class AbsAction2048 implements Action{
 
+	private static final long serialVersionUID = 1L; // for Serializable
 	protected int boardSize;
 	protected State currState;
 	protected int EMPTY_CELL=0;
-
-	
-	
-
 	
 	
 	public void moveUp() {

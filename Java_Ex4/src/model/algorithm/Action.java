@@ -1,7 +1,9 @@
 package model.algorithm;
 
+import java.io.Serializable;
 
-public interface Action {
+
+public interface Action extends Serializable {
 	
 	String getName();
 	
