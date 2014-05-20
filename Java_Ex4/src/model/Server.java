@@ -21,11 +21,11 @@ import model.algorithm.State;
 
 public class Server implements Runnable {
 	// Data Members
-	ServerSocket server;
-	private int port;
-	private int poolSize;
-	private boolean stop;
-	private Solver solver;
+	private ServerSocket server; 
+	private int port;      //listen
+	private int poolSize;  //size of thread pool
+	private boolean stop;  //flag to stop the server
+	private Solver solver; //general solver
 	//private ClientHandler<Integer> handler;
 	
 	// Methods
