@@ -4,14 +4,14 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class ConnectionHandler implements ClientHandler<Integer>{
+public class ConnectionHandler {
 	
 	// Data Members
 	private static Integer val = 0;
 	
 	// Constructor
 
-	@Override
+	//@Override
 	public Integer handleClient(ObjectInputStream inFromClient, ObjectOutputStream out2Client) {
 		String line;
 		try {

@@ -25,16 +25,16 @@ public class Server implements Runnable {
 	private int port;
 	private int poolSize;
 	private boolean stop;
-	private Solver solver;
-	//private ClientHandler<Integer> handler;
+	private ClientHandler handler;
+	
 	
 	// Methods
 	
 	// Server constructor
-	public Server(int port, int poolSize, Solver solver) {
+	public Server(int port, int poolSize, ClientHandler handler) {
 		this.port = port;
 		this.poolSize = poolSize;
-		this.solver = solver;
+		this.handler = handler;
 		this.stop = false;
 	}
 	
@@ -50,12 +50,12 @@ public class Server implements Runnable {
 			ExecutorService threadPool = Executors.newFixedThreadPool(poolSize);
 			
 			//create a list to hold the Future object associated with Callable
-	        List<Future<Action>> list = new CopyOnWriteArrayList<Future<Action>>();
+	        //List<Future<Action>> list = new CopyOnWriteArrayList<Future<Action>>();
 			
 			// Server main loop
 			while (!stop) {
 				try {
-					// Check if any task is done 
+					/*// Check if any task is done 
 					for(Future<Action> fut : list){
 			            try {
 			                //print the return value of Future, notice the output delay in console
@@ -67,29 +67,37 @@ public class Server implements Runnable {
 			            } catch (InterruptedException | ExecutionException e) {
 			                e.printStackTrace();
 			            }
-			        }	
-					
+			        }	*/
 					
 				//System.out.println("Waiting for client");
 				final Socket client = server.accept();
 				System.out.println("Client connected");
 				
-				/*final BufferedReader inFromClient = new BufferedReader(new InputStreamReader(client.getInputStream()));
-				final PrintWriter out2Client = new PrintWriter(new OutputStreamWriter(client.getOutputStream())); */
-				
 				final ObjectInputStream inFromClient = new ObjectInputStream(client.getInputStream());
 				final ObjectOutputStream out2Client = new ObjectOutputStream(client.getOutputStream());
 				
 				
-				//final State start = (State) inFromClient.readObject();
+				threadPool.execute(new Runnable() {
+					
+					@Override
+					public void run() {
+						// Handle client given state
+						handler.handleClient(inFromClient, out2Client);
+						try {
+							client.close();
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						
+					}
+				});
 				
-				//TODO: maybe use FutureTask?
-				 Future<Action> task = threadPool.submit(new Callable<Action>() {
+				/*threadPool.submit(new Callable<Action>() {
 
 					@Override
 					public Action call() throws Exception {
 						//return the thread name executing this callable task
-				        //return Thread.currentThread().getName();
 						
 						Action nextMove = null;
 						try {
@@ -116,9 +124,7 @@ public class Server implements Runnable {
 						return nextMove;
 						}		
 				});
-				 
-				// Add task to list of Futures 
-				list.add(task);
+				*/
 
 
 				} catch (SocketTimeoutException e) {

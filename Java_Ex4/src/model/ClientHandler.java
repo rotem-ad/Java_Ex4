@@ -3,8 +3,10 @@ package model;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public interface ClientHandler <T> {
+import model.algorithm.Solver;
+
+public interface ClientHandler {
 	
-	public T handleClient(ObjectInputStream inFromClient, ObjectOutputStream out2Client);
+	public void handleClient(ObjectInputStream inFromClient, ObjectOutputStream out2Client);
 
 }

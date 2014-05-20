@@ -26,7 +26,7 @@ public class RunClient {
 		State s;
 		s = m2048.currState.Clone();
 		
-		for(int i=0; i<200; i++)
+		for(int i=0; i<10; i++)
 		{
 			outToServer.writeObject(s);
 			outToServer.flush();
