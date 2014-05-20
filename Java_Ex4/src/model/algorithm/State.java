@@ -63,18 +63,7 @@ public class State implements Serializable {
 		this.player = player;
 	}
 	
-	/*public void setPlayerPosition(int row, int col){
-		this.playerCol = col;
-		this.playerRow=row;
-	}
-	public int getPlayerCol()
-	{
-		return playerCol;
-	}
-	public int getPlayerRow()
-	{
-		return playerRow;
-	}*/
+
 	public int[][] getBoard() {
 		return board;
 	}
