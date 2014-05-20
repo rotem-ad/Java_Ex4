@@ -18,7 +18,7 @@ public class AlgoTester {
 		m2048.currState.getBoard()[0][1]=2;
 		m2048.currState.getBoard()[0][2]=4;
 		
-		Solver solver = new MiniMax(m2048, 3);
+		Solver solver = new MiniMax(m2048, 6);
 		State s;
 		s = m2048.currState.Clone();
 		for(int i=0; i<200; i++)

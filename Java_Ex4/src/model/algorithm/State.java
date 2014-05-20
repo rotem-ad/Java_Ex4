@@ -8,11 +8,10 @@ public class State {
 	private int[][] board;
 	private int score;
 	private int player;
-	//private int playerRow;
-	//private int playerCol;
 	public static int UNDEFINED_MOVE = -1;
 	public static int MAX = 1;
 	public static int MIN = 2;
+	
 	public int prevMove;
 	
 	public int getPlayer()
@@ -20,11 +19,7 @@ public class State {
 		return this.player;
 	}
 	
-	public int utility()
-	{
-		return evaluatePosition();
-		
-	}
+	
 	 int[][] Three_in_a_Row =  {
 		    { 0, 1, 2 },
 		    { 3, 4, 5 },
@@ -60,23 +55,7 @@ public class State {
 					 cellIds.add(i*getBoardSize()+j);
 		 return cellIds;
 	 }
-	private	int evaluatePosition()    {
-		    int opponent = (player == MAX) ? MIN : MAX;
-		    int piece;
-		    int players, others, t = 0, i, j;
-		    for(i=0; i<8; i++)  {
-		        players = others = 0;
-		        for(j=0; j<3; j++)  {
-		            piece = board[i][j];
-		            if (piece == player)
-		                players++;
-		            else if (piece == opponent)
-		                others++;
-		        }
-		        t += Heuristic_Array[players][others];
-		    }
-		    return t;
-		}
+	
 	public void getPlayer(int player)
 	{
 		this.player = player;

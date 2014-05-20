@@ -7,20 +7,14 @@ import java.util.Map;
 
 public class MiniMax extends AbsSolver{
 
-	
-
-	public enum Direction{
-		left, right, up, down
-	}
-	
-	public enum Player{
+	//private members
+	private enum Player{
 		USER, COMPUTER
 	}
-	
-	
 	private Model model;
 	private int depth;
 	
+	//contractor
 	public MiniMax(Model model, int depth) {
 		super();
 		this.model = model;
@@ -104,7 +98,7 @@ public class MiniMax extends AbsSolver{
 
                 int i,j;
                 
-                int[][] boardArray;
+              
                 
                 for(Integer cellId : moves) {
                     i = cellId/state.getBoardSize();
@@ -142,7 +136,7 @@ public class MiniMax extends AbsSolver{
      * @param clusteringScore
      * @return 
      */
-    private static int heuristicScore(int actualScore, int numberOfEmptyCells, int clusteringScore) {
+    private  int heuristicScore(int actualScore, int numberOfEmptyCells, int clusteringScore) {
         int score = (int) (actualScore+Math.log(actualScore)*numberOfEmptyCells -clusteringScore);
         return Math.max(score, Math.min(actualScore, 1));
     }
@@ -154,7 +148,7 @@ public class MiniMax extends AbsSolver{
      * @param boardArray
      * @return 
      */
-    private static int calculateClusteringScore(int[][] boardArray) {
+    private  int calculateClusteringScore(int[][] boardArray) {
         int clusteringScore=0;
         
         int[] neighbors = {-1,0,1};
