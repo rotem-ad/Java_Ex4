@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import model.ClientHandler;
+import model.Game2048Handler;
 import model.Server;
 import model.game2048.Model2048;
 
@@ -67,9 +68,10 @@ public class RunServer {
 			e.printStackTrace();
 		}
 		
-		ClientHandler handler = srvConfig.getHandler();
+		//ClientHandler handler = srvConfig.getHandler();
 		Model2048 m2048 = new Model2048(4);
 		//Solver solver = new MiniMax(m2048, 3);
+		ClientHandler handler = new Game2048Handler();
 		int port = srvConfig.getPort();
 		int poolSize = srvConfig.getPoolSize();
 		
