@@ -6,9 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import model.ClientHandler;
-import model.Game2048Handler;
 import model.Server;
-import model.game2048.Model2048;
 
 import com.thoughtworks.xstream.XStream;
 
@@ -24,7 +22,10 @@ public class RunServer {
 		
 		
 		/*XStream xs = new XStream();
-		ServerConf srvConf = new ServerConf(5000, 8, new ConnectionHandler());
+		
+		Solver  gameSolver = new MiniMax(new Model2048(4), 3);
+		
+		ServerConf srvConf = new ServerConf(5550, 8, new Game2048Handler(gameSolver));
 
 		String xmlString = xs.toXML(srvConf);
 		
@@ -68,10 +69,7 @@ public class RunServer {
 			e.printStackTrace();
 		}
 		
-		//ClientHandler handler = srvConfig.getHandler();
-		Model2048 m2048 = new Model2048(4);
-		//Solver solver = new MiniMax(m2048, 3);
-		ClientHandler handler = new Game2048Handler();
+		ClientHandler handler = srvConfig.getHandler();
 		int port = srvConfig.getPort();
 		int poolSize = srvConfig.getPoolSize();
 		
