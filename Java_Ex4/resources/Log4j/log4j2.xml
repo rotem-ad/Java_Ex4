@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="ServerLogConfig" packages="">
+  <Appenders>
+    <File name="srvLogFile" fileName="resources/Log/Server.log">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} [%t] %-5level %logger{36} - %msg%n</Pattern>
+      </PatternLayout>
+    </File>
+  </Appenders>
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="srvLogFile"/>
+    </Root>
+  </Loggers>
+</Configuration>
