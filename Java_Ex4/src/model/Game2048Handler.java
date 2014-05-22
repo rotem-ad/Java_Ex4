@@ -30,12 +30,13 @@ public class Game2048Handler implements ClientHandler{
 		try {
 		SlimState slimstate;
 		logger.info("Starting handling client");
+		System.out.println("Starting handling client");
 		// Get state from client. If score is -1 then finish handle this client
 		while ((slimstate = (SlimState) inFromClient.readObject()).getScore() != Game2048Settings.FLAG_STOP_SOLVING) {
 				// Handle the client's request - solve given state
 				nextMove = solver.Solve(State.fromSlimState(slimstate));
 				
-				//System.out.println(Thread.currentThread().getName() + ": solving..");
+				System.out.println(Thread.currentThread().getName() + ": solving..");
 				
 				// Send solution to client 
 				out2Client.writeObject(nextMove);

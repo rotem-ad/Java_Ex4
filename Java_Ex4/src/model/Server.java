@@ -56,7 +56,7 @@ public class Server implements Runnable {
 				try {
 					// Wait for client request
 					final Socket client = server.accept();
-					
+					System.out.println("client connected");
 					// Set proper streams for communication
 					final ObjectInputStream inFromClient = new ObjectInputStream(client.getInputStream());
 					final ObjectOutputStream out2Client = new ObjectOutputStream(client.getOutputStream());

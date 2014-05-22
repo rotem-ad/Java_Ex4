@@ -68,3 +68,403 @@ Details: IP: 10.0.0.9 ID: 92cff903-7317-4644-a97e-9e0bbb4b7d75
 2014-05-22 15:09:30,977 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
 2014-05-22 15:09:30,978 [pool-2-thread-1] INFO  model.Server - Closing connection with client: IP: 10.0.0.9 ID: 92cff903-7317-4644-a97e-9e0bbb4b7d75
 2014-05-22 16:00:16,792 [Thread-2] INFO  model.Server - Server started
+2014-05-22 16:02:35,622 [Thread-2] INFO  model.Server - Server started
+2014-05-22 16:02:48,745 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 1f3ba96a-62f3-4a4b-a301-c397b0e7999e
+2014-05-22 16:02:48,745 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 16:02:48,793 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 1f3ba96a-62f3-4a4b-a301-c397b0e7999e
+2014-05-22 16:02:55,479 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 57373bf2-89fc-4759-a168-cc8ad8b9d18d
+2014-05-22 16:02:55,479 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 16:02:55,492 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 57373bf2-89fc-4759-a168-cc8ad8b9d18d
+2014-05-22 16:03:46,400 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: c632d9ad-5c7f-4aa2-9081-ac699a34c4b0
+2014-05-22 16:03:46,401 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 16:03:46,443 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: c632d9ad-5c7f-4aa2-9081-ac699a34c4b0
+2014-05-22 16:05:07,846 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: d25da489-154e-4634-bb28-848329bd71f2
+2014-05-22 16:05:07,847 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 16:05:07,880 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: d25da489-154e-4634-bb28-848329bd71f2
+2014-05-22 16:06:25,859 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: eb1db49c-dbac-4c2b-9c5f-93c55378c06c
+2014-05-22 16:06:25,860 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 16:06:25,892 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: eb1db49c-dbac-4c2b-9c5f-93c55378c06c
+2014-05-22 16:07:59,201 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 646b2e56-0beb-440c-ac24-fa8211d3ec96
+2014-05-22 16:07:59,201 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 16:09:03,129 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 646b2e56-0beb-440c-ac24-fa8211d3ec96
+2014-05-22 16:48:50,998 [Thread-2] INFO  model.Server - Server started
+2014-05-22 16:49:20,082 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 23cdf1f3-f8d3-4d65-8d94-a920816796ab
+2014-05-22 16:49:20,083 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 16:54:35,558 [Thread-2] INFO  model.Server - Server started
+2014-05-22 16:57:59,203 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: e31bf231-12e2-49f8-8204-3507509a8020
+2014-05-22 16:57:59,204 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 16:59:46,645 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: e31bf231-12e2-49f8-8204-3507509a8020
+2014-05-22 17:01:34,164 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 8fe94b0c-260a-4726-9b7f-4fb917a85099
+2014-05-22 17:01:34,165 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:01:34,645 [pool-2-thread-2] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:01:34,647 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 8fe94b0c-260a-4726-9b7f-4fb917a85099
+2014-05-22 17:02:22,851 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 47b83bf0-a372-4709-9a2d-ced9365a378d
+2014-05-22 17:02:22,852 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:02:27,324 [pool-2-thread-3] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:02:27,325 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 47b83bf0-a372-4709-9a2d-ced9365a378d
+2014-05-22 17:03:45,032 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: cd4a42a3-5d38-47ad-a256-e9e10153a767
+2014-05-22 17:03:45,033 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:04:37,052 [pool-2-thread-4] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:04:37,054 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: cd4a42a3-5d38-47ad-a256-e9e10153a767
+2014-05-22 17:05:05,959 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 2ee5ccfb-1e6c-4ba3-a98f-307815567023
+2014-05-22 17:05:05,959 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:05:11,729 [pool-2-thread-5] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:05:11,730 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 2ee5ccfb-1e6c-4ba3-a98f-307815567023
+2014-05-22 17:05:14,657 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: b8bc1ba9-b8ae-465f-96e6-e7e746e5e4e0
+2014-05-22 17:05:14,657 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:05:19,932 [pool-2-thread-6] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:05:19,933 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: b8bc1ba9-b8ae-465f-96e6-e7e746e5e4e0
+2014-05-22 17:07:21,916 [pool-2-thread-7] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 1248216e-3e49-424e-b751-ddad337826ae
+2014-05-22 17:07:21,916 [pool-2-thread-7] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:07:42,612 [pool-2-thread-7] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:07:42,613 [pool-2-thread-7] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 1248216e-3e49-424e-b751-ddad337826ae
+2014-05-22 17:11:59,818 [pool-2-thread-8] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 73f9f549-b220-4ab3-9d37-790529ff342a
+2014-05-22 17:11:59,818 [pool-2-thread-8] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:14:03,135 [pool-2-thread-8] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 73f9f549-b220-4ab3-9d37-790529ff342a
+2014-05-22 17:14:19,090 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: ddfcd502-cd4d-4b83-9210-d0acb2e30fe3
+2014-05-22 17:14:19,090 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:14:25,760 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:14:25,762 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: ddfcd502-cd4d-4b83-9210-d0acb2e30fe3
+2014-05-22 17:16:08,197 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 286b63f8-f838-4af3-9856-6b7085417ed1
+2014-05-22 17:16:08,198 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:18:52,073 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 286b63f8-f838-4af3-9856-6b7085417ed1
+2014-05-22 17:19:41,435 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 58b38729-868e-429b-a5e5-b05be2b7f8b2
+2014-05-22 17:19:41,436 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:20:11,597 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 58b38729-868e-429b-a5e5-b05be2b7f8b2
+2014-05-22 17:20:26,306 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 51cf5c6e-90e7-44d9-85bf-23a69faa64c3
+2014-05-22 17:20:26,306 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:20:34,809 [pool-2-thread-4] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:20:34,811 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 51cf5c6e-90e7-44d9-85bf-23a69faa64c3
+2014-05-22 17:22:27,119 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: cada39b8-2a1f-44ce-bab6-af34497839de
+2014-05-22 17:22:27,120 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:23:15,231 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: cada39b8-2a1f-44ce-bab6-af34497839de
+2014-05-22 17:28:23,251 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: c127bf23-1a55-4c2b-a7de-b80568188446
+2014-05-22 17:28:23,252 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:30:24,897 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: c127bf23-1a55-4c2b-a7de-b80568188446
+2014-05-22 17:31:07,298 [pool-2-thread-7] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 9e40ce5f-decf-4a91-b292-03319b7b2266
+2014-05-22 17:31:07,299 [pool-2-thread-7] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:31:12,824 [pool-2-thread-7] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:31:12,825 [pool-2-thread-7] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 9e40ce5f-decf-4a91-b292-03319b7b2266
+2014-05-22 17:31:40,858 [pool-2-thread-8] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 8efcf4df-9b9e-44f9-85d2-9d911d125c06
+2014-05-22 17:31:40,858 [pool-2-thread-8] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:31:46,241 [pool-2-thread-8] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:31:46,242 [pool-2-thread-8] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 8efcf4df-9b9e-44f9-85d2-9d911d125c06
+2014-05-22 17:33:24,512 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: de183df4-8aa8-474e-bf3c-a5eb326fba4b
+2014-05-22 17:33:24,513 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:33:30,042 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:33:30,044 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: de183df4-8aa8-474e-bf3c-a5eb326fba4b
+2014-05-22 17:36:43,983 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 24471c3d-ab3a-4053-8a2d-d5f34d7a745d
+2014-05-22 17:36:43,984 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:36:48,435 [pool-2-thread-2] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:36:48,436 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 24471c3d-ab3a-4053-8a2d-d5f34d7a745d
+2014-05-22 17:38:06,925 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 492da5a6-63e5-465d-8d3d-88ff3ffa9e36
+2014-05-22 17:38:06,926 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:38:11,420 [pool-2-thread-3] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:38:11,421 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 492da5a6-63e5-465d-8d3d-88ff3ffa9e36
+2014-05-22 17:41:48,723 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 0148a696-c22a-470e-9fdd-b854a0b5b112
+2014-05-22 17:41:48,724 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:42:18,705 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 0148a696-c22a-470e-9fdd-b854a0b5b112
+2014-05-22 17:42:53,245 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: a41c472a-f7d0-4ab5-9bcf-6e7249a63d1c
+2014-05-22 17:42:53,245 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:44:16,357 [pool-2-thread-5] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:44:16,358 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: a41c472a-f7d0-4ab5-9bcf-6e7249a63d1c
+2014-05-22 17:56:11,523 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: e64be0cb-5e34-4209-918f-8fbb6486493b
+2014-05-22 17:56:11,523 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:56:44,594 [pool-2-thread-6] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:56:44,595 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: e64be0cb-5e34-4209-918f-8fbb6486493b
+2014-05-22 17:57:28,320 [pool-2-thread-7] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 1b2bfc7b-31cb-47c5-bb95-a43fd822b0c1
+2014-05-22 17:57:28,321 [pool-2-thread-7] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:58:28,229 [pool-2-thread-7] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 1b2bfc7b-31cb-47c5-bb95-a43fd822b0c1
+2014-05-22 17:59:08,262 [pool-2-thread-8] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: b4f8c0d3-ec55-40b7-a7e5-fefdb9cd146e
+2014-05-22 17:59:08,263 [pool-2-thread-8] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 17:59:42,897 [pool-2-thread-8] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 17:59:42,898 [pool-2-thread-8] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: b4f8c0d3-ec55-40b7-a7e5-fefdb9cd146e
+2014-05-22 18:00:45,132 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 60fbcbe7-ad3e-46ef-afaa-e1d2a0312c88
+2014-05-22 18:00:45,133 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:04:21,197 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:04:21,198 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 60fbcbe7-ad3e-46ef-afaa-e1d2a0312c88
+2014-05-22 18:10:40,476 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: a52e1d83-1632-4e9b-995f-d6d5f1c95110
+2014-05-22 18:10:40,476 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:10:41,746 [pool-2-thread-2] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:10:41,748 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: a52e1d83-1632-4e9b-995f-d6d5f1c95110
+2014-05-22 18:10:42,912 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 556d3d80-f170-4d0a-a793-0ac4c5ff1380
+2014-05-22 18:10:42,913 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:10:44,221 [pool-2-thread-3] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:10:44,221 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 556d3d80-f170-4d0a-a793-0ac4c5ff1380
+2014-05-22 18:11:11,809 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 34a8acdb-e651-4eab-8753-609daaf317db
+2014-05-22 18:11:11,810 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:11:13,109 [pool-2-thread-4] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:11:13,110 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 34a8acdb-e651-4eab-8753-609daaf317db
+2014-05-22 18:11:14,786 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: e696cf9c-2337-49b6-b721-7314ef903aef
+2014-05-22 18:11:14,787 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:11:16,066 [pool-2-thread-5] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:11:16,067 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: e696cf9c-2337-49b6-b721-7314ef903aef
+2014-05-22 18:11:17,149 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 1fd3d5a5-c2f8-469b-b8b2-320bf137102f
+2014-05-22 18:11:17,150 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:11:18,511 [pool-2-thread-6] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:11:18,512 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 1fd3d5a5-c2f8-469b-b8b2-320bf137102f
+2014-05-22 18:11:19,509 [pool-2-thread-7] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 613f5c45-4000-4be6-a6d8-c1df2975e725
+2014-05-22 18:11:19,510 [pool-2-thread-7] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:11:20,777 [pool-2-thread-7] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:11:20,778 [pool-2-thread-7] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 613f5c45-4000-4be6-a6d8-c1df2975e725
+2014-05-22 18:11:21,797 [pool-2-thread-8] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 64490bb5-3eff-41cc-91c6-721e89e2caa6
+2014-05-22 18:11:21,798 [pool-2-thread-8] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:11:23,088 [pool-2-thread-8] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:11:23,089 [pool-2-thread-8] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 64490bb5-3eff-41cc-91c6-721e89e2caa6
+2014-05-22 18:12:13,980 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 4bd991da-1f5e-4345-8b82-9e0968b607b3
+2014-05-22 18:12:13,980 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:12:15,251 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:12:15,251 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 4bd991da-1f5e-4345-8b82-9e0968b607b3
+2014-05-22 18:12:16,146 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 8966f6d6-bb08-4cdc-bb15-8dab82665703
+2014-05-22 18:12:16,147 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:12:17,414 [pool-2-thread-2] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:12:17,416 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 8966f6d6-bb08-4cdc-bb15-8dab82665703
+2014-05-22 18:12:18,298 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 5430cb5b-c1a9-4ee6-bfcf-7407ba977474
+2014-05-22 18:12:18,298 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:12:19,579 [pool-2-thread-3] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:12:19,580 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 5430cb5b-c1a9-4ee6-bfcf-7407ba977474
+2014-05-22 18:12:20,284 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 9323d7a8-4d87-4ef0-8d19-724b1c3e10bf
+2014-05-22 18:12:20,284 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:12:21,551 [pool-2-thread-4] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:12:21,552 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 9323d7a8-4d87-4ef0-8d19-724b1c3e10bf
+2014-05-22 18:12:22,270 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 265b40f6-a087-4175-b95e-d2f068001db8
+2014-05-22 18:12:22,270 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:12:23,537 [pool-2-thread-5] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:12:23,538 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 265b40f6-a087-4175-b95e-d2f068001db8
+2014-05-22 18:12:24,537 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: da93dee4-dbab-4625-a8a3-4017358e8d5e
+2014-05-22 18:12:24,538 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:12:25,807 [pool-2-thread-6] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:12:25,808 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: da93dee4-dbab-4625-a8a3-4017358e8d5e
+2014-05-22 18:12:26,645 [pool-2-thread-7] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 0f2b9ff5-4669-4cf4-8c71-4bdb496134ce
+2014-05-22 18:12:26,645 [pool-2-thread-7] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:12:27,939 [pool-2-thread-7] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:12:27,940 [pool-2-thread-7] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 0f2b9ff5-4669-4cf4-8c71-4bdb496134ce
+2014-05-22 18:12:28,813 [pool-2-thread-8] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: b583d99e-4361-4a19-9565-20a90896c79d
+2014-05-22 18:12:28,814 [pool-2-thread-8] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:12:30,108 [pool-2-thread-8] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:12:30,109 [pool-2-thread-8] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: b583d99e-4361-4a19-9565-20a90896c79d
+2014-05-22 18:12:31,609 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 0b0741d5-5d20-456f-a7f0-b33dd9f01248
+2014-05-22 18:12:31,609 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:12:32,874 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:12:32,875 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 0b0741d5-5d20-456f-a7f0-b33dd9f01248
+2014-05-22 18:14:16,535 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 8c6e38be-d785-440f-b946-ffeeb7900fbb
+2014-05-22 18:14:16,536 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:14:21,006 [pool-2-thread-2] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:14:21,008 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 8c6e38be-d785-440f-b946-ffeeb7900fbb
+2014-05-22 18:16:24,328 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 3633970e-6bf5-4fdf-98b4-ab819d75513d
+2014-05-22 18:16:24,329 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:16:44,798 [pool-2-thread-3] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:16:44,798 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 3633970e-6bf5-4fdf-98b4-ab819d75513d
+2014-05-22 18:20:32,382 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 546e74b8-84fa-4c4a-8312-29fd708fd56e
+2014-05-22 18:20:32,383 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:20:52,859 [pool-2-thread-4] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:20:52,860 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 546e74b8-84fa-4c4a-8312-29fd708fd56e
+2014-05-22 18:26:49,580 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 13e21172-8444-452d-b4b3-266230b4125a
+2014-05-22 18:26:49,581 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:26:58,075 [pool-2-thread-5] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:26:58,076 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 13e21172-8444-452d-b4b3-266230b4125a
+2014-05-22 18:38:18,948 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 11c53280-a148-4857-b883-e482fb8124a4
+2014-05-22 18:38:18,950 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 18:38:29,470 [pool-2-thread-6] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 18:38:29,471 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 11c53280-a148-4857-b883-e482fb8124a4
+2014-05-22 19:17:53,142 [pool-2-thread-7] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 923ce011-08f8-495b-9515-32da1a397054
+2014-05-22 19:17:53,142 [pool-2-thread-7] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:17:56,621 [pool-2-thread-7] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 923ce011-08f8-495b-9515-32da1a397054
+2014-05-22 19:18:26,622 [pool-2-thread-8] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: c1700d2e-165d-46b5-8d3a-e6c99c92dc46
+2014-05-22 19:18:26,623 [pool-2-thread-8] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:18:31,301 [pool-2-thread-8] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: c1700d2e-165d-46b5-8d3a-e6c99c92dc46
+2014-05-22 19:19:33,844 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 97115f39-5254-4a6a-98df-825f7b3bdc30
+2014-05-22 19:19:33,844 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:19:42,864 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 97115f39-5254-4a6a-98df-825f7b3bdc30
+2014-05-22 19:21:25,251 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 451bd025-bdb7-4250-aa76-f1cb9669ed86
+2014-05-22 19:21:25,251 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:21:28,302 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 451bd025-bdb7-4250-aa76-f1cb9669ed86
+2014-05-22 19:22:15,102 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 817d4755-39f9-40b1-9e30-51a5cfe4fcfc
+2014-05-22 19:22:15,103 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:22:58,184 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 817d4755-39f9-40b1-9e30-51a5cfe4fcfc
+2014-05-22 19:26:45,001 [Thread-2] INFO  model.Server - Server started
+2014-05-22 19:27:07,111 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 551ab5a1-6823-427b-968d-600e435f19b2
+2014-05-22 19:27:07,111 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:27:23,175 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 551ab5a1-6823-427b-968d-600e435f19b2
+2014-05-22 19:30:50,124 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 5d648e11-423f-49f9-846e-763e15ad9ae7
+2014-05-22 19:30:50,124 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:31:32,722 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 5d648e11-423f-49f9-846e-763e15ad9ae7
+2014-05-22 19:39:18,636 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: f5ece51f-6b47-4b96-b5b2-09d4e5c7f351
+2014-05-22 19:39:18,636 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:39:26,084 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 8c993679-fcef-485a-bb8e-70e29793c2f1
+2014-05-22 19:39:26,084 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:39:32,951 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: b5ad1ab6-2d09-46d7-9064-cbd3326633d2
+2014-05-22 19:39:32,952 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:39:34,545 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: f237ae35-d33c-44b0-a43e-81e09b1b636f
+2014-05-22 19:39:34,546 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:39:36,824 [pool-2-thread-7] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 7cf5e1a7-6cac-4eaf-a2e4-2116ea8d6fee
+2014-05-22 19:39:36,825 [pool-2-thread-7] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:39:40,751 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: f5ece51f-6b47-4b96-b5b2-09d4e5c7f351
+2014-05-22 19:39:40,751 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: f237ae35-d33c-44b0-a43e-81e09b1b636f
+2014-05-22 19:39:40,752 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 8c993679-fcef-485a-bb8e-70e29793c2f1
+2014-05-22 19:39:40,753 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: b5ad1ab6-2d09-46d7-9064-cbd3326633d2
+2014-05-22 19:39:40,753 [pool-2-thread-7] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 7cf5e1a7-6cac-4eaf-a2e4-2116ea8d6fee
+2014-05-22 19:43:42,412 [pool-2-thread-8] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: a9990bba-6763-40ba-9c06-45214f7e1f74
+2014-05-22 19:43:42,413 [pool-2-thread-8] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:43:51,821 [pool-2-thread-8] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 19:43:51,822 [pool-2-thread-8] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: a9990bba-6763-40ba-9c06-45214f7e1f74
+2014-05-22 19:44:40,742 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: cb2b6954-92a0-44ad-a36d-977524d4a829
+2014-05-22 19:44:40,742 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:44:43,387 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 19:44:43,389 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: cb2b6954-92a0-44ad-a36d-977524d4a829
+2014-05-22 19:49:09,940 [Thread-2] INFO  model.Server - Server started
+2014-05-22 19:50:02,515 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.9 ID: ae89d952-4ed1-4e7b-b71d-274babf7ee5f
+2014-05-22 19:50:02,515 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:53:05,739 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.9 ID: ae89d952-4ed1-4e7b-b71d-274babf7ee5f
+2014-05-22 19:54:22,344 [Thread-2] INFO  model.Server - Server started
+2014-05-22 19:54:48,357 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.9 ID: c24ce191-5756-46a0-8b37-bac01936adc9
+2014-05-22 19:54:48,357 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:55:05,981 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.9 ID: c24ce191-5756-46a0-8b37-bac01936adc9
+2014-05-22 19:56:49,254 [Thread-2] INFO  model.Server - Server started
+2014-05-22 19:57:08,096 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: d4fcafe3-b71f-459f-ac56-892388c65b97
+2014-05-22 19:57:08,096 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 19:57:53,376 [Thread-2] INFO  model.Server - Server started
+2014-05-22 19:58:11,050 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 3d2116ac-27f5-424b-9855-6edb1ebd9f5c
+2014-05-22 19:58:11,051 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-22 20:03:13,028 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
+2014-05-22 20:03:13,030 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 3d2116ac-27f5-424b-9855-6edb1ebd9f5c
