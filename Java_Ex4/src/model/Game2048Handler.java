@@ -3,6 +3,10 @@ package model;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.Date;
+
+import model.algorithm.Solver;
+import model.algorithm.State;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,9 +14,6 @@ import org.apache.logging.log4j.Logger;
 import Entities.Game2048Settings;
 import Entities.GameAction;
 import Entities.SlimState;
-import model.algorithm.Action;
-import model.algorithm.Solver;
-import model.algorithm.State;
 
 public class Game2048Handler implements ClientHandler{
 	// Members
@@ -36,8 +37,6 @@ public class Game2048Handler implements ClientHandler{
 				// Handle the client's request - solve given state
 				nextMove = solver.Solve(State.fromSlimState(slimstate));
 				
-				System.out.println(Thread.currentThread().getName() + ": solving..");
-				
 				// Send solution to client 
 				out2Client.writeObject(nextMove);
 				out2Client.flush();
@@ -53,7 +52,9 @@ public class Game2048Handler implements ClientHandler{
 			e.printStackTrace();
 		}
 		catch (IOException e) {
-			System.out.println("Client disconnected unexpectedly");
+			Date currDate = new Date();
+			logger.error("Client disconnected unexpectedly");
+			System.out.println(""+currDate + "  Client disconnected unexpectedly");
 			return;
 		}
 	}

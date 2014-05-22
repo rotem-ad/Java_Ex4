@@ -1,14 +1,11 @@
 package model;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
-import java.util.Date;
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -114,21 +111,6 @@ public class Server implements Runnable {
 
 	public int getPoolSize() {
 		return poolSize;
-	}
-	
-	// Method for writing informational messages to server's log file
-	protected static void writeToLog(String message) {
-		Date currDate = new Date();
-		try {
-			BufferedWriter logFile = new BufferedWriter(new FileWriter("resources/Log/Server.log",true));
-			logFile.append(""+currDate + "\t"); // write current date and time
-			logFile.append(message + "\n"); // write given message to file
-			logFile.flush();
-			logFile.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 }
