@@ -14,6 +14,7 @@ public class AlgoTester {
 	}
 	public static void doStuff()
 	{
+		/*
 		Model2048 m2048 = new Model2048(4);
 		m2048.currState.getBoard()[0][1]=2;
 		m2048.currState.getBoard()[0][2]=4;
@@ -29,7 +30,7 @@ public class AlgoTester {
 			
 			s = nextMove.doAction(s);
 		}
-		
+		*/
 		
 	}
 

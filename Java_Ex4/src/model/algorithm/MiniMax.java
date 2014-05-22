@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import Entities.GameAction;
+
 public class MiniMax extends AbsSolver{
 
 	//private members
@@ -22,15 +24,14 @@ public class MiniMax extends AbsSolver{
 	}
 	
 	@Override
-	public Action Solve(State start) {
+	public GameAction Solve(State start) {
 		// TODO Auto-generated method stub
 		
 		try{
 		   
 			Map<String, Object> result =  minimax(start, this.depth, Player.USER);
 			Action act1 = (Action)result.get("Action");
-			
-			return act1;
+			return act1.getId();
 		}
 		catch(Exception ex)
 		{

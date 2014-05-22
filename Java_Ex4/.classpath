@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="resources/Log4j/log4j-core-2.0-rc1.jar"/>
 	<classpathentry kind="lib" path="resources/Log4j/log4j-api-2.0-rc1.jar"/>
 	<classpathentry kind="lib" path="resources/Log4j"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Common"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -7,6 +7,9 @@ import java.io.ObjectOutputStream;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import Entities.Game2048Settings;
+import Entities.GameAction;
+import Entities.SlimState;
 import model.algorithm.Action;
 import model.algorithm.Solver;
 import model.algorithm.State;
@@ -23,14 +26,14 @@ public class Game2048Handler implements ClientHandler{
 
 	@Override
 	public void handleClient(ObjectInputStream inFromClient,ObjectOutputStream out2Client) {
-		Action nextMove = null;
+		GameAction nextMove = null;
 		try {
-		State state;
+		SlimState slimstate;
 		logger.info("Starting handling client");
 		// Get state from client. If score is -1 then finish handle this client
-		while ((state = (State) inFromClient.readObject()).getScore() != -1) {
+		while ((slimstate = (SlimState) inFromClient.readObject()).getScore() != Game2048Settings.FLAG_STOP_SOLVING) {
 				// Handle the client's request - solve given state
-				nextMove = solver.Solve(state);
+				nextMove = solver.Solve(State.fromSlimState(slimstate));
 				
 				//System.out.println(Thread.currentThread().getName() + ": solving..");
 				

@@ -1,5 +1,6 @@
 package model.tictactoe;
 
+import Entities.GameAction;
 import model.algorithm.Action;
 import model.algorithm.State;
 
@@ -28,6 +29,12 @@ public class ActionTtt implements Action{
 		State stt = state.Clone();
 		stt.getBoard()[row][col]=action;
 		return stt;
+	}
+
+	@Override
+	public GameAction getId() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

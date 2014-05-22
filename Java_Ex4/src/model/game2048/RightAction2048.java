@@ -1,5 +1,6 @@
 package model.game2048;
 
+import Entities.GameAction;
 import model.algorithm.State;
 
 public class RightAction2048 extends AbsAction2048 {
@@ -15,6 +16,12 @@ public class RightAction2048 extends AbsAction2048 {
 		this.currState=state.Clone();
 		moveRight();
 		return this.currState;
+	}
+
+	@Override
+	public GameAction getId() {
+		// TODO Auto-generated method stub
+		return GameAction.RIGHT;
 	}
 
 }

@@ -1,5 +1,6 @@
 package model.game2048;
 
+import Entities.GameAction;
 import model.algorithm.State;
 
 public class DownAction2048 extends AbsAction2048 {
@@ -15,6 +16,11 @@ public class DownAction2048 extends AbsAction2048 {
 		this.currState=state.Clone();
 		moveDown();
 		return this.currState;
+	}
+
+	@Override
+	public GameAction getId() {
+		return GameAction.DOWN;
 	}
 
 }

@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import Entities.SlimState;
+
 public class State implements Serializable {
 	
 	private static final long serialVersionUID = 1L; // for Serializable
@@ -98,5 +100,12 @@ public class State implements Serializable {
 				if (s.board[i][j] != board[i][j])
 					return false;
 		return this.score == s.score ;//&& this.playerCol == s.playerCol && this.playerRow==s.playerRow;
+	}
+	
+	public static State fromSlimState(SlimState state){
+		State fullState = new State();
+		fullState.setBoard(state.getBoard());
+		fullState.setScore(state.getScore());
+		return fullState;
 	}
 }
