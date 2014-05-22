@@ -67,3 +67,4 @@ Details: IP: 10.0.0.9 ID: 92cff903-7317-4644-a97e-9e0bbb4b7d75
 2014-05-22 15:09:30,871 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
 2014-05-22 15:09:30,977 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
 2014-05-22 15:09:30,978 [pool-2-thread-1] INFO  model.Server - Closing connection with client: IP: 10.0.0.9 ID: 92cff903-7317-4644-a97e-9e0bbb4b7d75
+2014-05-22 16:00:16,792 [Thread-2] INFO  model.Server - Server started
