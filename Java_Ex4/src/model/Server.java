@@ -9,6 +9,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
 import java.util.Date;
+import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -22,8 +23,7 @@ public class Server implements Runnable {
 	private int poolSize;  // size of thread pool
 	private boolean stop;  // flag to stop the server
 	private ClientHandler handler; // handler for client requests
-	
-	private static final Logger logger = LogManager.getLogger();
+	private static final Logger logger = LogManager.getLogger(); // server logger for writing to log file
 	
 	// Methods
 	
@@ -44,9 +44,6 @@ public class Server implements Runnable {
 			System.out.println(infoMessage);
 			
 			logger.info(infoMessage);
-			
-			// Write message also to log file
-			//writeToLog(infoMessage);
 			
 			// Server timeout
 			server.setSoTimeout(1000);
@@ -70,12 +67,13 @@ public class Server implements Runnable {
 						@Override
 						public void run() {
 							// TODO: use UUID...
-							logger.info("Client connected. Details: " + "IP: " + client.getInetAddress());
-							//logger.info("Handling thread is: " + Thread.currentThread().getName());
+							String clientId = UUID.randomUUID().toString();
+							String clientIp = (client.getInetAddress().toString().substring(1));
+							logger.info("Client connected.\nClient details: " + "IP: " + clientIp + " ID: " + clientId);
 							// Handle client given state
 							handler.handleClient(inFromClient, out2Client);
 							try {
-								//writeToLog("Closing connection with client: " + "IP: " + client.getInetAddress() + " Class: " + client.getClass());
+								logger.info("Closing connection with client:\nClient details: " + "IP: " + clientIp + " ID: " + clientId);
 								client.close();
 							} catch (IOException e) {
 								e.printStackTrace();
