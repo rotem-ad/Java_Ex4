@@ -13,7 +13,7 @@ public class RunClient {
 
 	public static void main(String[] srgs) throws Exception 
 	{
-		Socket  myServer = new Socket(InetAddress.getByName("10.100.101.111"), 5550);
+		Socket  myServer = new Socket(InetAddress.getByName("10.0.0.9"), 5550);
 		
 		ObjectOutputStream outToServer = new ObjectOutputStream(myServer.getOutputStream());
 		ObjectInputStream inFromServer = new ObjectInputStream(myServer.getInputStream());				
