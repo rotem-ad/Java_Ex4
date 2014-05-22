@@ -69,8 +69,9 @@ public class Server implements Runnable {
 
 						@Override
 						public void run() {
-							//writeToLog("Client connected. Details: " + "IP: " + client.getInetAddress() + " Class: " + client.getClass());
-							//writeToLog("Handling thread is: " + Thread.currentThread().getName());
+							// TODO: use UUID...
+							logger.info("Client connected. Details: " + "IP: " + client.getInetAddress());
+							//logger.info("Handling thread is: " + Thread.currentThread().getName());
 							// Handle client given state
 							handler.handleClient(inFromClient, out2Client);
 							try {
@@ -89,7 +90,7 @@ public class Server implements Runnable {
 			}
 			
 			// When stop is TRUE, terminate the server
-			//writeToLog("Stopping server......"); // write to log file
+			logger.info("Stopping server......"); // write to log file
 			threadPool.shutdownNow(); // shutdown thread pool
 			server.close(); // close server socket
 			
@@ -121,7 +122,7 @@ public class Server implements Runnable {
 	protected static void writeToLog(String message) {
 		Date currDate = new Date();
 		try {
-			BufferedWriter logFile = new BufferedWriter(new FileWriter("resources/Log/Server.log"));
+			BufferedWriter logFile = new BufferedWriter(new FileWriter("resources/Log/Server.log",true));
 			logFile.append(""+currDate + "\t"); // write current date and time
 			logFile.append(message + "\n"); // write given message to file
 			logFile.flush();
