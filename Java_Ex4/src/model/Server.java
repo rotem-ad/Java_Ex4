@@ -66,7 +66,7 @@ public class Server implements Runnable {
 
 						@Override
 						public void run() {
-							// TODO: use UUID...
+							// TODO: pass UUID to handler
 							String clientId = UUID.randomUUID().toString();
 							String clientIp = (client.getInetAddress().toString().substring(1));
 							logger.info("Client connected.\nClient details: " + "IP: " + clientIp + " ID: " + clientId);
