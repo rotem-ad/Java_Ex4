@@ -22,22 +22,6 @@ public class State implements Serializable {
 	}
 	
 	
-	 int[][] Three_in_a_Row =  {
-		    { 0, 1, 2 },
-		    { 3, 4, 5 },
-		    { 6, 7, 8 },
-		    { 0, 3, 6 },
-		    { 1, 4, 7 },
-		    { 2, 5, 8 },
-		    { 0, 4, 8 },
-		    { 2, 4, 6 }
-		};
-	 int[][] Heuristic_Array = {
-		    {     0,   -10,  -100, -1000 },
-		    {    10,     0,     0,     0 },
-		    {   100,     0,     0,     0 },
-		    {  1000,     0,     0,     0 }
-		};
 	 public int getNumberOfEmptyCells()
 	 {
 		 int count =0;
@@ -47,7 +31,7 @@ public class State implements Serializable {
 					 count++;
 		 return count;
 	 }
-	 public List<Integer> getEmptyCellIds()
+	public List<Integer> getEmptyCellIds()
 	 {
 		 List<Integer> cellIds = new ArrayList<Integer>();
 		 
@@ -80,6 +64,7 @@ public class State implements Serializable {
 	//constractor -- create new state
 	public State() {
 	}
+	
 	public State(int boardSize) {
 		this.board = new int[boardSize][boardSize];
 		this.score = 0; //at the beginning of the game score is 0
