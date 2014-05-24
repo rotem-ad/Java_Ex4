@@ -182,3 +182,9 @@ Client details: IP: 10.0.0.1 ID: ba4e3b60-c426-4908-b16a-f76d16b44d33
 2014-05-24 17:33:49,243 [pool-2-thread-3] INFO  model.Game2048Handler - Finished handling client
 2014-05-24 17:33:49,243 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
 Client details: IP: 10.0.0.3 ID: dc1dd440-6521-4f9c-bcc2-12f81d0853a3
+2014-05-24 18:10:59,976 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.3 ID: 271335e7-4aac-4908-a991-65af562c718e
+2014-05-24 18:10:59,976 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 18:11:21,109 [pool-2-thread-4] INFO  model.Game2048Handler - Finished handling client
+2014-05-24 18:11:21,109 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.3 ID: 271335e7-4aac-4908-a991-65af562c718e
