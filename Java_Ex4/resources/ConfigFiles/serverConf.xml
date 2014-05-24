@@ -50,7 +50,7 @@
         <WINNIG__NUMBER>2048</WINNIG__NUMBER>
         <EMPTY__CELL>0</EMPTY__CELL>
       </model>
-      <depth>3</depth>
+      <depth>7</depth>
     </solver>
   </handler>
 </config.ServerConf>
