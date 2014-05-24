@@ -30,10 +30,19 @@ public class Model2048 extends AbsModel{
 	@Override
 	public ArrayList<Action> getPossibleActions(State state, int player) {
 		ArrayList<Action> possibleActions = new ArrayList<Action>();
-		possibleActions.add(new UpAction2048());
-		possibleActions.add(new DownAction2048());
-		possibleActions.add(new LeftAction2048());
-		possibleActions.add(new RightAction2048());
+		Action up = new UpAction2048();
+		Action down = new DownAction2048();
+		Action left = new LeftAction2048();
+		Action right = new RightAction2048();
+		
+		if(isActionValid(state, up))
+			possibleActions.add(up);
+		if(isActionValid(state, down))
+			possibleActions.add(down);
+		if(isActionValid(state, left))
+			possibleActions.add(left);
+		if(isActionValid(state, right))
+			possibleActions.add(right);
 		return possibleActions;
 	}
 	
@@ -80,6 +89,15 @@ public class Model2048 extends AbsModel{
 		return false;
 	}
 
+	private boolean isActionValid(State state, Action action)
+	{
+		State newState =	action.doAction(state);
+		if (newState.equals(state))
+			return false;
+		else
+			return true;
+	}
+	
     /**
      * Calculates a heuristic variance-like score that measures how clustered the
      * board is.
