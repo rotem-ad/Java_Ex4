@@ -2,7 +2,7 @@
   <port>5550</port>
   <poolSize>8</poolSize>
   <handler class="model.Game2048Handler">
-    <solver class="model.algorithm.MiniMax">
+    <solver class="model.algorithm.AlphaBeta">
       <closed/>
       <open serialization="custom">
         <unserializable-parents/>
