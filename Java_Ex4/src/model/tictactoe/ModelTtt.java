@@ -99,4 +99,17 @@ public class ModelTtt implements Model{
 		return isPlayerWon(state.getPlayer());
 		
 	}
+
+	@Override
+	public int calculateClusteringScore(int[][] boardArray) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int heuristicScore(int actualScore, int numberOfEmptyCells,
+			int clusteringScore) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
