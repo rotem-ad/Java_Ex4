@@ -10,3 +10,175 @@ Client details: IP: 127.0.0.1 ID: eaa5f18f-10de-4b3e-932b-a7522fdb9ec7
 Client details: IP: 127.0.0.1 ID: eaa5f18f-10de-4b3e-932b-a7522fdb9ec7
 2014-05-22 23:57:23,251 [Thread-2] INFO  model.Server - Stopping server......
 2014-05-22 23:57:23,251 [Thread-2] INFO  model.Server - Server stopped successfuly
+2014-05-24 14:31:22,972 [Thread-2] INFO  model.Server - Server started
+2014-05-24 14:31:30,405 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: a6deb597-f51c-4765-ba3e-7c667608b807
+2014-05-24 14:31:30,405 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 14:31:51,520 [pool-2-thread-1] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 14:31:51,779 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: a6deb597-f51c-4765-ba3e-7c667608b807
+2014-05-24 14:39:51,529 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: b0f731cb-13f9-4114-96da-7a822faaaf51
+2014-05-24 14:39:51,530 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 14:40:26,869 [pool-2-thread-2] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 14:40:26,869 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: b0f731cb-13f9-4114-96da-7a822faaaf51
+2014-05-24 14:41:34,165 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 1297e112-f7fe-4205-a41c-b3a93ccd217b
+2014-05-24 14:41:34,165 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 14:41:52,714 [pool-2-thread-3] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 14:41:52,715 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 1297e112-f7fe-4205-a41c-b3a93ccd217b
+2014-05-24 14:42:44,789 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 23ad028b-af6c-4856-8da7-2b265e4818d8
+2014-05-24 14:42:44,790 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 14:43:05,425 [pool-2-thread-4] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 14:43:05,426 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 23ad028b-af6c-4856-8da7-2b265e4818d8
+2014-05-24 14:49:17,585 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 6b85c78f-49be-425d-8578-8b74ee5f279c
+2014-05-24 14:49:17,586 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 14:49:26,744 [pool-2-thread-5] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 14:49:26,744 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 6b85c78f-49be-425d-8578-8b74ee5f279c
+2014-05-24 14:49:38,487 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 70c7d6c3-d15f-4419-a1df-f4ccc82b5cb8
+2014-05-24 14:49:38,488 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 14:49:50,473 [pool-2-thread-6] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 14:49:50,474 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 70c7d6c3-d15f-4419-a1df-f4ccc82b5cb8
+2014-05-24 14:54:28,464 [pool-2-thread-7] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: c59bce68-d2bb-4cda-a2e2-d93473984586
+2014-05-24 14:54:28,465 [pool-2-thread-7] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 14:54:48,363 [pool-2-thread-7] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 14:54:48,363 [pool-2-thread-7] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: c59bce68-d2bb-4cda-a2e2-d93473984586
+2014-05-24 14:56:05,802 [pool-2-thread-8] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 575640fb-7798-4572-960d-ed5670d9950d
+2014-05-24 14:56:05,803 [pool-2-thread-8] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 14:56:29,463 [pool-2-thread-8] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 14:56:29,464 [pool-2-thread-8] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 575640fb-7798-4572-960d-ed5670d9950d
+2014-05-24 14:57:37,898 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 669601cf-dae0-4f18-a6b4-c4837d69a022
+2014-05-24 14:57:37,899 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 14:57:57,762 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
+2014-05-24 14:57:57,764 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 669601cf-dae0-4f18-a6b4-c4837d69a022
+2014-05-24 15:01:53,490 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 3ec5593c-7338-45c0-9099-0ce8356ba024
+2014-05-24 15:01:53,490 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:02:03,003 [pool-2-thread-2] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 15:02:03,004 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 3ec5593c-7338-45c0-9099-0ce8356ba024
+2014-05-24 15:07:12,669 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 9a95b5f5-0f37-463d-a6af-02b88019b1fd
+2014-05-24 15:07:12,670 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:07:44,219 [pool-2-thread-3] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 15:07:44,221 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 9a95b5f5-0f37-463d-a6af-02b88019b1fd
+2014-05-24 15:10:21,095 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 1c624f65-1993-4463-aa3e-9766421fb4fe
+2014-05-24 15:10:21,096 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:10:39,170 [pool-2-thread-4] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 15:10:39,171 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 1c624f65-1993-4463-aa3e-9766421fb4fe
+2014-05-24 15:12:33,267 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 39766d54-b94a-4797-a4af-83626908c51d
+2014-05-24 15:12:33,268 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:12:44,363 [pool-2-thread-5] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 15:12:44,364 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 39766d54-b94a-4797-a4af-83626908c51d
+2014-05-24 15:16:47,010 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 3df84ba8-aa89-48c0-a598-7a72ec4498e4
+2014-05-24 15:16:47,011 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:19:03,812 [pool-2-thread-6] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 15:19:03,814 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 3df84ba8-aa89-48c0-a598-7a72ec4498e4
+2014-05-24 15:21:52,156 [pool-2-thread-7] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: a6466a02-c699-4d9d-a671-04883018791c
+2014-05-24 15:21:52,157 [pool-2-thread-7] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:22:06,272 [pool-2-thread-7] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 15:22:06,274 [pool-2-thread-7] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: a6466a02-c699-4d9d-a671-04883018791c
+2014-05-24 15:22:38,852 [pool-2-thread-8] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: be1e44be-8e3d-475d-bfd2-9922bcd06c7b
+2014-05-24 15:22:38,853 [pool-2-thread-8] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:23:34,427 [pool-2-thread-8] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 15:23:34,447 [pool-2-thread-8] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: be1e44be-8e3d-475d-bfd2-9922bcd06c7b
+2014-05-24 15:42:24,844 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.9 ID: 2f8a0bd5-c80a-46ef-a6d2-d5107c9c6614
+2014-05-24 15:42:24,844 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:42:46,744 [pool-2-thread-1] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 15:42:46,744 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.9 ID: 2f8a0bd5-c80a-46ef-a6d2-d5107c9c6614
+2014-05-24 15:47:41,831 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.9 ID: 236a4b15-26b8-4f73-ac68-980f01abfbd5
+2014-05-24 15:47:41,831 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:48:05,039 [pool-2-thread-2] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 15:48:05,039 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.9 ID: 236a4b15-26b8-4f73-ac68-980f01abfbd5
+2014-05-24 15:51:58,108 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 8cf5fa51-b5bd-4655-96a1-6a5c5f69fc9f
+2014-05-24 15:51:58,109 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:52:00,043 [pool-2-thread-3] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 15:52:00,044 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 8cf5fa51-b5bd-4655-96a1-6a5c5f69fc9f
+2014-05-24 15:52:41,787 [pool-2-thread-4] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: c770a308-3365-419a-b407-1d2997573c44
+2014-05-24 15:52:41,788 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 15:53:22,846 [pool-2-thread-4] INFO  model.Game2048Handler - Finished handling client
+2014-05-24 15:53:22,848 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: c770a308-3365-419a-b407-1d2997573c44
+2014-05-24 17:09:39,901 [pool-2-thread-5] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: ee1bc970-a13e-4f6f-b4da-a271ca08c419
+2014-05-24 17:09:39,902 [pool-2-thread-5] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 17:09:42,185 [pool-2-thread-5] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 17:09:42,187 [pool-2-thread-5] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: ee1bc970-a13e-4f6f-b4da-a271ca08c419
+2014-05-24 17:13:35,839 [pool-2-thread-6] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: fd84a4d6-8d08-40ad-adc8-b1b368222465
+2014-05-24 17:13:35,840 [pool-2-thread-6] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 17:13:39,619 [pool-2-thread-6] INFO  model.Game2048Handler - Finished handling client
+2014-05-24 17:13:39,620 [pool-2-thread-6] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: fd84a4d6-8d08-40ad-adc8-b1b368222465
+2014-05-24 17:15:47,901 [pool-2-thread-7] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: cab02296-6849-4cfc-8639-4b83f0e30a11
+2014-05-24 17:15:47,902 [pool-2-thread-7] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 17:15:51,323 [pool-2-thread-7] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 17:15:51,324 [pool-2-thread-7] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: cab02296-6849-4cfc-8639-4b83f0e30a11
+2014-05-24 17:16:22,614 [pool-2-thread-8] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.6 ID: 70e02eaa-c739-4fda-9e7c-cbe44b278fd9
+2014-05-24 17:16:22,615 [pool-2-thread-8] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 17:16:38,672 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.9 ID: 4650414b-e905-4cfd-b113-0f9e7e8ecb8d
+2014-05-24 17:16:38,673 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 17:16:46,686 [pool-2-thread-8] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 17:16:46,686 [pool-2-thread-8] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.6 ID: 70e02eaa-c739-4fda-9e7c-cbe44b278fd9
+2014-05-24 17:21:57,994 [pool-2-thread-1] ERROR model.Game2048Handler - Client disconnected unexpectedly
+2014-05-24 17:21:57,994 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.9 ID: 4650414b-e905-4cfd-b113-0f9e7e8ecb8d
+2014-05-24 17:23:33,858 [Thread-2] INFO  model.Server - Stopping server......
+2014-05-24 17:23:33,860 [Thread-2] INFO  model.Server - Server stopped successfuly
+2014-05-24 17:23:54,712 [Thread-2] INFO  model.Server - Server started
+2014-05-24 17:23:59,603 [pool-2-thread-1] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.1 ID: 3a6328f5-5dfc-493b-96ee-34d98ebc77c2
+2014-05-24 17:23:59,603 [pool-2-thread-1] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 17:24:01,395 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
+2014-05-24 17:24:01,397 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.1 ID: 3a6328f5-5dfc-493b-96ee-34d98ebc77c2
+2014-05-24 17:32:21,279 [pool-2-thread-2] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.1 ID: ba4e3b60-c426-4908-b16a-f76d16b44d33
+2014-05-24 17:32:21,280 [pool-2-thread-2] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 17:33:08,404 [pool-2-thread-3] INFO  model.Server - Client connected.
+Client details: IP: 10.0.0.3 ID: dc1dd440-6521-4f9c-bcc2-12f81d0853a3
+2014-05-24 17:33:08,405 [pool-2-thread-3] INFO  model.Game2048Handler - Starting handling client
+2014-05-24 17:33:41,503 [pool-2-thread-2] INFO  model.Game2048Handler - Finished handling client
+2014-05-24 17:33:41,504 [pool-2-thread-2] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.1 ID: ba4e3b60-c426-4908-b16a-f76d16b44d33
+2014-05-24 17:33:49,243 [pool-2-thread-3] INFO  model.Game2048Handler - Finished handling client
+2014-05-24 17:33:49,243 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
+Client details: IP: 10.0.0.3 ID: dc1dd440-6521-4f9c-bcc2-12f81d0853a3
