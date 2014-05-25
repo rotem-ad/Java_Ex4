@@ -14,7 +14,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * @author ROTEM-A
+ * @author ROTEM-A & MARIA-K
  * 
  * Class which contains the server's functionality
  * All server activities are written to Server.log file for monitoring purpose
