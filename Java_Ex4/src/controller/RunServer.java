@@ -13,6 +13,11 @@ import com.thoughtworks.xstream.XStream;
 
 import config.ServerConf;
 
+/**
+ * @author ROTEM-A
+ *
+ * Run class for controlling the server instance
+ */
 public class RunServer {
 
 	// Constants
