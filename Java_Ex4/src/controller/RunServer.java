@@ -13,17 +13,23 @@ import com.thoughtworks.xstream.XStream;
 
 import config.ServerConf;
 
+/**
+ * @author ROTEM-A
+ *
+ * Run class for controlling the server instance
+ */
 public class RunServer {
 
 	// Constants
 	private static final String SERVER_CONF_PATH = "resources/ConfigFiles/serverConf.xml";
 	
-	
+	/**
+	 * Main method for server control:
+	 * 1. Loads server configuration from serverConf.xml and starts server
+	 * 2. Provides "shutdown" command for stopping the server instance
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		
-		
-		
-		
 		XStream xs = new XStream();
 		
 		BufferedReader xmlInput = null;

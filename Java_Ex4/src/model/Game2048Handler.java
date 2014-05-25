@@ -15,12 +15,21 @@ import Entities.Game2048Settings;
 import Entities.GameAction;
 import Entities.SlimState;
 
+/**
+ * @author ROTEM-A
+ * 
+ * Handler for clients which runs 2048 game
+ */
 public class Game2048Handler implements ClientHandler{
 	// Members
-	Solver solver;
+	private Solver solver;
 	private static final Logger logger = LogManager.getLogger();
 	
-	// Game2048Handler constructor
+	/**
+	 * Game2048Handler constructor
+	 * 
+	 * @param solver an object of class that implements Solver interface
+	 */
 	public Game2048Handler(Solver solver) {
 		this.solver = solver;
 	}
