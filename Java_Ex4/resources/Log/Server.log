@@ -338,3 +338,6 @@ Client details: IP: 127.0.0.1 ID: e332dc96-02da-4cf9-a00e-2ef31d9d6b17
 2014-05-24 22:38:29,966 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
 2014-05-24 22:38:29,966 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
 Client details: IP: 127.0.0.1 ID: 6898a9b4-5872-467d-a743-123df4f09e54
+2014-05-25 15:56:53,430 [Thread-2] INFO  model.Server - Server started
+2014-05-25 15:57:04,432 [Thread-2] INFO  model.Server - Stopping server......
+2014-05-25 15:57:04,432 [Thread-2] INFO  model.Server - Server stopped successfuly
