@@ -182,14 +182,6 @@ Client details: IP: 10.0.0.1 ID: ba4e3b60-c426-4908-b16a-f76d16b44d33
 2014-05-24 17:33:49,243 [pool-2-thread-3] INFO  model.Game2048Handler - Finished handling client
 2014-05-24 17:33:49,243 [pool-2-thread-3] INFO  model.Server - Closing connection with client:
 Client details: IP: 10.0.0.3 ID: dc1dd440-6521-4f9c-bcc2-12f81d0853a3
-<<<<<<< HEAD
-2014-05-24 18:10:59,976 [pool-2-thread-4] INFO  model.Server - Client connected.
-Client details: IP: 10.0.0.3 ID: 271335e7-4aac-4908-a991-65af562c718e
-2014-05-24 18:10:59,976 [pool-2-thread-4] INFO  model.Game2048Handler - Starting handling client
-2014-05-24 18:11:21,109 [pool-2-thread-4] INFO  model.Game2048Handler - Finished handling client
-2014-05-24 18:11:21,109 [pool-2-thread-4] INFO  model.Server - Closing connection with client:
-Client details: IP: 10.0.0.3 ID: 271335e7-4aac-4908-a991-65af562c718e
-=======
 2014-05-24 18:35:06,823 [Thread-2] INFO  model.Server - Server started
 2014-05-24 18:35:47,213 [Thread-2] INFO  model.Server - Server started
 2014-05-24 18:36:13,283 [pool-2-thread-1] INFO  model.Server - Client connected.
@@ -346,4 +338,9 @@ Client details: IP: 127.0.0.1 ID: e332dc96-02da-4cf9-a00e-2ef31d9d6b17
 2014-05-24 22:38:29,966 [pool-2-thread-1] INFO  model.Game2048Handler - Finished handling client
 2014-05-24 22:38:29,966 [pool-2-thread-1] INFO  model.Server - Closing connection with client:
 Client details: IP: 127.0.0.1 ID: 6898a9b4-5872-467d-a743-123df4f09e54
->>>>>>> branch 'master' of https://github.com/rotem-ad/Java_Ex4.git
+2014-05-25 15:56:53,430 [Thread-2] INFO  model.Server - Server started
+2014-05-25 15:57:04,432 [Thread-2] INFO  model.Server - Stopping server......
+2014-05-25 15:57:04,432 [Thread-2] INFO  model.Server - Server stopped successfuly
+2014-05-25 17:06:12,852 [Thread-2] INFO  model.Server - Server started
+2014-05-25 17:06:18,854 [Thread-2] INFO  model.Server - Stopping server......
+2014-05-25 17:06:18,854 [Thread-2] INFO  model.Server - Server stopped successfuly

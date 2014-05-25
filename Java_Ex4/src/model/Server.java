@@ -13,6 +13,13 @@ import java.util.concurrent.Executors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * @author ROTEM-A
+ * 
+ * Class which contains the server's functionality
+ * All server activities are written to Server.log file for monitoring purpose
+ * (Using Apache Log4j 2 logger)
+ */
 public class Server implements Runnable {
 	// Data Members
 	private ServerSocket server; 
@@ -24,7 +31,14 @@ public class Server implements Runnable {
 	
 	// Methods
 	
-	// Server constructor
+	/**
+	 * Server constructor
+	 * 
+	 * @param port	the listen port number
+	 * @param poolSize	the number of threads allowed in server's fixed thread pool
+	 * @param handler	the handler this server instance uses for handling client requests
+	 * @see ClientHandler
+	 */
 	public Server(int port, int poolSize, ClientHandler handler) {
 		this.port = port;
 		this.poolSize = poolSize;
@@ -32,6 +46,10 @@ public class Server implements Runnable {
 		this.stop = false;
 	}
 	
+	/**
+	 * Server main thread for accepting client requests.
+	 * For handling each client a separate thread is allocated from the thread pool
+	 */
 	@Override
 	public void run() {
 		try {
@@ -64,7 +82,7 @@ public class Server implements Runnable {
 						@Override
 						public void run() {
 							// TODO: pass UUID to handler
-							String clientId = UUID.randomUUID().toString();
+							String clientId = UUID.randomUUID().toString(); // Generate random UUID for client
 							String clientIp = (client.getInetAddress().toString().substring(1));
 							logger.info("Client connected.\nClient details: " + "IP: " + clientIp + " ID: " + clientId);
 							// Handle client given state
@@ -100,15 +118,29 @@ public class Server implements Runnable {
 
 	}
 	
+	/**
+	 * Method for stopping the server instance
+	 * 
+	 */
 	public void stopServer() {
 		// Setting stop flag to TRUE
 		this.stop = true;
 	}
 
+	/**
+	 * Getter for server listen port number
+	 * 
+	 * @return the server listen port number
+	 */
 	public int getPort() {
 		return port;
 	}
 
+	/**
+	 * Getter for server thread pool size
+	 * 
+	 * @return	the server's thread pool size
+	 */
 	public int getPoolSize() {
 		return poolSize;
 	}

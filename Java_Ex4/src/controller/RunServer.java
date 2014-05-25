@@ -22,33 +22,6 @@ public class RunServer {
 	public static void main(String[] args) {
 		
 		
-		/*XStream xs = new XStream();
-		
-		Solver  gameSolver = new MiniMax(new Model2048(4), 3);
-		
-		ServerConf srvConf = new ServerConf(5550, 8, new Game2048Handler(gameSolver));
-
-		String xmlString = xs.toXML(srvConf);
-		
-		BufferedWriter xmlOut = null;
-		try {
-			xmlOut = new BufferedWriter(new FileWriter("resources/ConfigFiles/serverConf.xml"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		try {
-			xmlOut.write(xmlString);
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-		
-		// Close xml file
-		try {
-			xmlOut.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}*/
 		
 		
 		XStream xs = new XStream();
